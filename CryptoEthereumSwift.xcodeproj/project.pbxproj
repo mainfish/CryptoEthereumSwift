@@ -174,7 +174,6 @@
 				16F57A7F8FCAFFA8C437223C /* Pods-Example.debug.xcconfig */,
 				19C5E34A231DC1A4462F9F19 /* Pods-Example.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -592,7 +591,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/Libraries/openssl/include",
 					"$(SRCROOT)/Libraries/secp256k1/include",
