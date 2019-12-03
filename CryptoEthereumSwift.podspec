@@ -148,8 +148,8 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   spec.xcconfig = { "SWIFT_INCLUDE_PATHS" => "${PODS_ROOT}/Libraries",
-		    "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/Libraries/openssl/include" "$(PODS_ROOT)/Libraries/secp256k1/include", 
-                    "LIBRARY_SEARCH_PATHS" => "$(PODS_ROOT)/Libraries/openssl/lib" "$(PODS_ROOT)/Libraries/secp256k1/lib" }
+		    "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/CryptoEthereumSwift/Libraries/openssl/include" "$(PODS_ROOT)/CryptoEthereumSwift/Libraries/secp256k1/include", 
+                    "LIBRARY_SEARCH_PATHS" => "$(PODS_ROOT)/CryptoEthereumSwift/Libraries/openssl/lib" "$(PODS_ROOT)/CryptoEthereumSwift/Libraries/secp256k1/lib" }
   # spec.dependency "JSONKit", "~> 1.4"
   spec.dependency "CryptoSwift"
 
